@@ -1,19 +1,23 @@
 /**
  * After installation of terraform, update your package by following below steps:
  */
-
+ 
 cd usr/local/bin
 mkdir tfenv
 cd tfenv
 git clone https://github.com/kamatama41/tfenv.git ~/.tfenv
 
-/* Goto root and follow below steps */
+
+/**
+ * Goto root and follow below steps:
+ */
+ 
 echo 'export PATH="$HOME/.tfenv/bin:$PATH"' >> ~/.bash_profile
 tfenv install latest
 
 
 /**
- * For every new update just punch below command to update a new version.
+ * For every new update just punch below command to update a new version:
  */
 
 tfenv install latest
