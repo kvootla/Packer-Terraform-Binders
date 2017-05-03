@@ -8,13 +8,15 @@ cd ~/terraform
 curl -O https://releases.hashicorp.com/terraform/0.9.4/terraform_0.9.4_linux_amd64.zip
 # Unzip and install
 unzip terraform_0.9.4_linux_amd64.zip
+## Check for latest terraform updates - https://releases.hashicorp.com/terraform
 
 cd ~/packer
 
 # Download Terraform.
-curl -O https://releases.hashicorp.com/packer/0.10.0/packer_0.10.0_linux_amd64.zip
+curl -O https://releases.hashicorp.com/packer/1.0.0/packer_1.0.0_linux_amd64.zip
 # Unzip and install
-unzip packer_0.10.0_linux_amd64.zip
+unzip packer_1.0.0_linux_amd64.zip
+## Check for latest packers updates - https://releases.hashicorp.com/packer
 
 echo '
 # Terraform & Packer Paths.
@@ -22,6 +24,7 @@ export PATH=~/terraform:~/packer/:$PATH
 ' >>~/.bashrc
 
 source ~/.bashrc
+
 
 # verify we're all set to terraform and packer.
 terraform
