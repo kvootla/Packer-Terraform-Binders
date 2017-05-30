@@ -20,4 +20,15 @@ tfenv install latest
  * For every new update just punch below command to update a new version:
  */
 
+cd ../../../../
+cd Users/administrator/
+
+cat .terraform-version
+0.9.5
+
+echo 0.9.6 > .terraform-version
+or 
 tfenv install latest
+
+terraform --version
+Terraform v0.9.6
