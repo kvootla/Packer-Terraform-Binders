@@ -5,17 +5,17 @@ mkdir packer
 cd ~/terraform
 
 # Download Terraform.
-curl -O https://releases.hashicorp.com/terraform/0.9.4/terraform_0.9.4_linux_amd64.zip
+curl -O https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip
 # Unzip and install
-unzip terraform_0.9.4_linux_amd64.zip
+unzip terraform_0.9.11_linux_amd64.zip
 ## Check for latest terraform updates - https://releases.hashicorp.com/terraform
 
 cd ~/packer
 
 # Download Terraform.
-curl -O https://releases.hashicorp.com/packer/1.0.0/packer_1.0.0_linux_amd64.zip
+curl -O https://releases.hashicorp.com/packer/1.0.2/packer_1.0.2_linux_amd64.zip
 # Unzip and install
-unzip packer_1.0.0_linux_amd64.zip
+unzip packer_1.0.2_linux_amd64.zip
 ## Check for latest packers updates - https://releases.hashicorp.com/packer
 
 echo '
