@@ -1,0 +1,32 @@
+# Create a move into directory.
+mkdir terraform
+mkdir packer
+
+cd ~/terraform
+
+# Download Terraform.
+curl -O https://releases.hashicorp.com/terraform/0.10.9/terraform_0.10.9_linux_amd64.zip
+# Unzip and install
+unzip terraform_0.10.9_linux_amd64.zip
+## Check for latest terraform updates - https://releases.hashicorp.com/terraform
+
+cd ~/packer
+
+# Download Terraform.
+curl -O https://releases.hashicorp.com/packer/1.0.9/packer_1.0.9_linux_amd64.zip
+# Unzip and install
+unzip packer_1.0.9_linux_amd64.zip
+## Check for latest packers updates - https://releases.hashicorp.com/packer
+
+echo '
+# Terraform & Packer Paths.
+export PATH=~/terraform:~/packer/:$PATH
+' >>~/.bashrc
+
+source ~/.bashrc
+
+
+# verify we're all set to terraform and packer.
+terraform
+packer
+
